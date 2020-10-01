@@ -19,129 +19,157 @@
     </head>
 
     <body>
-    	<!-- Navigation -->
-        <!-- <nav id="navbar">
-        	<div class="brand">
-        		<img src="./images/logo.png" alt="logo Cristina">
-        	</div>
-
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./carousel.html">Carousel</a>
-                </li>
-            </ul>
-        </nav> -->
-
-		<!-- Header -->
-		<header class="bg-purple">
-            <h3>This is the header</h3>
+    	<!-- Header -->
+		<header class="bg-dark text-light text-center">
+            <h4 class="p-3">This is the header</h4>
         </header>
 
     	<div id="container" class="container-fluid p-0">
-            <div class="cards d-flex justify-content-between">
-                <div class="card flex-fill m-3">
-                    <img class="card-img-top" src="./images/smiley.svg" alt="Smiley image">
+            <div class="row">
+                <!-- Navigation -->
+                <nav class="col-md-2 bg-light sidebar py-4 pl-5">
+                    <div class="sidebar-sticky">
+                        <h4 class="text-secondary mb-3">Categories</h4>
 
-                    <div class="card-body text-center">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <hr class="w-25">
-                        <a href="#" class="btn btn-primary">See Profile</a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-dark active pl-1" href="#">Design</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-dark pl-1" href="#">Frontend</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-dark pl-1" href="#">Backend</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-dark pl-1" href="#">UX</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-dark pl-1" href="#">UI</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                </nav>
 
-                <div class="card flex-fill m-3">
-                    <img class="card-img-top" src="./images/smiley.svg" alt="Smiley image">
+                <!-- Main content -->
+                <main class="col-md-10 my-3 text-secondary">
+                    <div class="cards d-flex justify-content-between">
+                        <div class="card flex-fill m-3">
+                            <img class="card-img-top" src="./images/share1.png" alt="Smiley face image">
 
-                    <div class="card-body text-center">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <hr class="w-25">
-                        <a href="#" class="btn btn-primary">See Profile</a>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Smiley face</h4>
+                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+
+                                <hr class="w-25">
+                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn more</a>
+                            </div>
+                        </div>
+
+                        <div class="card flex-fill m-3">
+                            <img class="card-img-top" src="./images/join1.png" alt="Join us image">
+
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Join us</h4>
+                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+
+                                <hr class="w-25">
+                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Join us block">Learn more</a>
+                            </div>
+                        </div>
+
+                        <div class="card flex-fill m-3">
+                            <img class="card-img-top" src="./images/list1.png" alt="To do list image">
+
+                            <div class="card-body text-center">
+                                <h4 class="card-title">To do list</h4>
+                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+
+                                <hr class="w-25">
+                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a To do list block">Learn more</a>
+                            </div>
+                        </div>
+
+                        <div class="card flex-fill m-3">
+                            <img class="card-img-top" src="./images/team1.png" alt="Team project image">
+
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Team project</h4>
+                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+
+                                <hr class="w-25">
+                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Team project block">Learn more</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card flex-fill m-3">
-                    <img class="card-img-top" src="./images/smiley.svg" alt="Smiley image">
+                    <div class="cards d-flex justify-content-between">
+                        <div class="card flex-fill m-3">
+                            <img class="card-img-top" src="./images/designer1.png" alt="Designer overflow image">
 
-                    <div class="card-body text-center">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <hr class="w-25">
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Designer overflow</h4>
+                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
 
-                <div class="card flex-fill m-3">
-                    <img class="card-img-top" src="./images/smiley.svg" alt="Smiley image">
+                                <hr class="w-25">
+                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Designer overflow block">Learn more</a>
+                            </div>
+                        </div>
 
-                    <div class="card-body text-center">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <hr class="w-25">
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                </div>
+                        <div class="card flex-fill m-3">
+                            <img class="card-img-top" src="./images/fixing1.png" alt="Fixing bugs image">
+
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Fixing bugs</h4>
+                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+
+                                <hr class="w-25">
+                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Fixing bugs block">Learn more</a>
+                            </div>
+                        </div>
+
+                        <div class="card flex-fill m-3">
+                            <img class="card-img-top" src="./images/bike1.png" alt="Riding bike image">
+
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Riding bike</h4>
+                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+
+                                <hr class="w-25">
+                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Riding bike block">Learn more</a>
+                            </div>
+                        </div>
+
+                        <div class="card flex-fill m-3">
+                            <img class="card-img-top" src="./images/imagination1.png" alt="Imagination image">
+
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Imagination</h4>
+                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+
+                                <hr class="w-25">
+                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Imagination block">Learn more</a>
+                            </div>
+                        </div>
+                    </div>   
+                </main>   
             </div>
-
-            <div class="cards d-flex justify-content-between">
-                <div class="card flex-fill m-3">
-                    <img class="card-img-top" src="./images/smiley.svg" alt="Smiley image">
-
-                    <div class="card-body text-center">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <hr class="w-25">
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                </div>
-
-                <div class="card flex-fill m-3">
-                    <img class="card-img-top" src="./images/smiley.svg" alt="Smiley image">
-
-                    <div class="card-body text-center">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <hr class="w-25">
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                </div>
-
-                <div class="card flex-fill m-3">
-                    <img class="card-img-top" src="./images/smiley.svg" alt="Smiley image">
-
-                    <div class="card-body text-center">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <hr class="w-25">
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                </div>
-
-                <div class="card flex-fill m-3">
-                    <img class="card-img-top" src="./images/smiley.svg" alt="Smiley image">
-
-                    <div class="card-body text-center">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <hr class="w-25">
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                </div>
-            </div>      
 		</div>
 
  		<!-- Footer -->
-		<footer>
-	    	<ul class="footer-links">
+		<footer class="text-center bg-dark py-2">
+            <h5 class="text-light">Footer</h5>
+
+	    	<ul class="footer-links list-unstyled">
 				<li>
-					<a href="./index.html">Home page</a>
+					<a class="text-white text-decoration-none" href="./index.html">Home page</a>
 				</li>
 				<li>
-					<a href="#">Carousel</a>
+					<a class="text-white text-decoration-none" href="#">Carousel</a>
 				</li>
 			</ul>
 		</footer>
@@ -151,4 +179,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </html>
