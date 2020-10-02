@@ -10,6 +10,10 @@ a {
 	font-size: 0.8em!important;
 }
 
+.nav-carousel {
+	font-size: 1.2em!important;
+}
+
 .card a:hover {
 	background-color: #f76c68!important;
 	color: #fff!important;
