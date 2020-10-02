@@ -1,7 +1,6 @@
 /* Body */
 body {
 	margin: 0;
-	/*font-family: 'Montserrat', sans-serif;*/
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 0.9em;
 	background-color: #ddd;
@@ -20,24 +19,36 @@ a {
 	box-shadow: 4px 4px 10px -4px rgba(0, 0, 0, 0.75);
 }
 
-nav#sidebar-nav ul.nav li a.nav-link.text-uppercase.text-dark:hover {
+nav#sidebar ul.nav li a.nav-link.text-uppercase.text-dark:hover {
 	color: #f76c68!important;
+}
+
+/*Collapsible sidebar*/
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+
+#sidebar.active {
+    margin-left: -250px;
 }
 
 
 /************************ Responsive ************************/
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
+/*// Small devices*/
+@media (max-width: 768px) {
+	#sidebar {
+        margin-left: -250px;
+    }
 
+    #sidebar.active {
+        margin-left: 0;
+    }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-
-}
-
-// Large devices (desktops, 992px and up)
+/*// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 
 }
@@ -45,4 +56,4 @@ nav#sidebar-nav ul.nav li a.nav-link.text-uppercase.text-dark:hover {
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 
-}
+}*/

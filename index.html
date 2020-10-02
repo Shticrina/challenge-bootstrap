@@ -21,143 +21,157 @@
     <body>
     	<!-- Header -->
 		<header class="bg-dark text-light text-center">
-            <h4 class="p-3">This is the header</h4>
+            <h4 class="p-4 mb-0">This is the header</h4>
         </header>
 
-    	<div id="container" class="container-fluid p-0">
-            <div class="row">
-                <!-- Navigation -->
-                <nav id="sidebar-nav" class="col-md-2 bg-light sidebar py-4 pl-5">
-                    <div class="sidebar-sticky">
-                        <h4 class="text-secondary mb-3">Categories</h4>
+        <!-- <div class="d-flex flex-sm-row flex-column align-items-stretch"> -->
+        <div class="d-flex align-items-stretch">
+            <!-- Navigation -->
+            <nav id="sidebar" class="bg-light py-4 pl-5">
+                <div class="sidebar-header">
+                    <h4 class="text-secondary mb-3">Categories</h4>
+                </div>
 
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link text-uppercase text-dark active pl-1" href="#"><i class="fas fa-palette mr-2"></i>Design</a>
-                            </li>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-dark active pl-1" href="#"><i class="fas fa-palette mr-2"></i>Design</a>
+                    </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link text-uppercase text-dark pl-1" href="#"><i class="fab fa-centercode mr-2"></i>Frontend</a>
-                            </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-dark pl-1" href="#"><i class="fab fa-centercode mr-2"></i>Frontend</a>
+                    </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link text-uppercase text-dark pl-1" href="#"><i class="fas fa-coffee mr-2"></i>Backend</a>
-                            </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-dark pl-1" href="#"><i class="fas fa-coffee mr-2"></i>Backend</a>
+                    </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link text-uppercase text-dark pl-1" href="#"><i class="fab fa-sketch mr-2"></i>UX</a>
-                            </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-dark pl-1" href="#"><i class="fab fa-sketch mr-2"></i>UX</a>
+                    </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link text-uppercase text-dark pl-1" href="#"><i class="fas fa-qrcode mr-2"></i>UI</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-dark pl-1" href="#"><i class="fas fa-qrcode mr-2"></i>UI</a>
+                    </li>
+                </ul>
+            </nav>
 
-                <!-- Main content -->
-                <main class="col-md-10 my-3 text-secondary">
-                    <div class="cards d-flex justify-content-between">
-                        <div class="card flex-fill m-3">
-                            <img class="card-img-top" src="./images/share1.png" alt="Smiley face image">
+            <!-- Main content -->
+            <div id="content" class="my-3 text-secondary">
+                <!-- Toggle sidebar button -->
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-danger">
+                        <i class="fas fa-angle-double-left"></i>
+                    </button>
+                </div>
 
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Smiley face</h5>
-                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                <div class="cards d-flex justify-content-between flex-sm-row flex-column">
+                    <!-- card 1 -->
+                    <div class="card flex-fill m-3">
+                        <img class="card-img-top" src="./images/share1.png" alt="Smiley face image">
 
-                                <hr class="w-25">
-                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn more</a>
-                            </div>
-                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Smiley face</h5>
+                            <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
 
-                        <div class="card flex-fill m-3">
-                            <img class="card-img-top" src="./images/join1.png" alt="Join us image">
-
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Join us</h5>
-                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-
-                                <hr class="w-25">
-                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Join us block">Learn more</a>
-                            </div>
-                        </div>
-
-                        <div class="card flex-fill m-3">
-                            <img class="card-img-top" src="./images/list1.png" alt="To do list image">
-
-                            <div class="card-body text-center">
-                                <h5 class="card-title">To do list</h5>
-                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-
-                                <hr class="w-25">
-                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a To do list block">Learn more</a>
-                            </div>
-                        </div>
-
-                        <div class="card flex-fill m-3">
-                            <img class="card-img-top" src="./images/team1.png" alt="Team project image">
-
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Team project</h5>
-                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-
-                                <hr class="w-25">
-                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Team project block">Learn more</a>
-                            </div>
+                            <hr class="w-25">
+                            <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Smiley face block">Learn more</a>
                         </div>
                     </div>
 
-                    <div class="cards d-flex justify-content-between">
-                        <div class="card flex-fill m-3">
-                            <img class="card-img-top" src="./images/designer1.png" alt="Designer overflow image">
+                    <!-- card 2 -->
+                    <div class="card flex-fill m-3">
+                        <img class="card-img-top" src="./images/join1.png" alt="Join us image">
 
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Designer overflow</h5>
-                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Join us</h5>
+                            <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
 
-                                <hr class="w-25">
-                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Designer overflow block">Learn more</a>
-                            </div>
+                            <hr class="w-25">
+                            <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Join us block">Learn more</a>
                         </div>
+                    </div>
 
-                        <div class="card flex-fill m-3">
-                            <img class="card-img-top" src="./images/fixing1.png" alt="Fixing bugs image">
+                    <!-- card 3 -->
+                    <div class="card flex-fill m-3">
+                        <img class="card-img-top" src="./images/list1.png" alt="To do list image">
 
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Fixing bugs</h5>
-                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">To do list</h5>
+                            <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
 
-                                <hr class="w-25">
-                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Fixing bugs block">Learn more</a>
-                            </div>
+                            <hr class="w-25">
+                            <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a To do list block">Learn more</a>
                         </div>
+                    </div>
 
-                        <div class="card flex-fill m-3">
-                            <img class="card-img-top" src="./images/bike1.png" alt="Riding bike image">
+                    <!-- card 4 -->
+                    <div class="card flex-fill m-3">
+                        <img class="card-img-top" src="./images/team1.png" alt="Team project image">
 
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Riding bike</h5>
-                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Team project</h5>
+                            <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
 
-                                <hr class="w-25">
-                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Riding bike block">Learn more</a>
-                            </div>
+                            <hr class="w-25">
+                            <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Team project block">Learn more</a>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="card flex-fill m-3">
-                            <img class="card-img-top" src="./images/imagination1.png" alt="Imagination image">
+                <div class="cards d-flex justify-content-between flex-sm-row flex-column">
+                    <!-- card 5 -->
+                    <div class="card flex-fill m-3">
+                        <img class="card-img-top" src="./images/designer1.png" alt="Designer overflow image">
 
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Imagination</h5>
-                                <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Designer overflow</h5>
+                            <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
 
-                                <hr class="w-25">
-                                <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Imagination block">Learn more</a>
-                            </div>
+                            <hr class="w-25">
+                            <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Designer overflow block">Learn more</a>
                         </div>
-                    </div>   
-                </main>   
-            </div>
+                    </div>
+
+                    <!-- card 6 -->
+                    <div class="card flex-fill m-3">
+                        <img class="card-img-top" src="./images/fixing1.png" alt="Fixing bugs image">
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fixing bugs</h5>
+                            <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+
+                            <hr class="w-25">
+                            <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Fixing bugs block">Learn more</a>
+                        </div>
+                    </div>
+
+                    <!-- card 7 -->
+                    <div class="card flex-fill m-3">
+                        <img class="card-img-top" src="./images/bike1.png" alt="Riding bike image">
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Riding bike</h5>
+                            <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+
+                            <hr class="w-25">
+                            <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is a Riding bike block">Learn more</a>
+                        </div>
+                    </div>
+
+                    <!-- card 8 -->
+                    <div class="card flex-fill m-3">
+                        <img class="card-img-top" src="./images/imagination1.png" alt="Imagination image">
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Imagination</h5>
+                            <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+
+                            <hr class="w-25">
+                            <a href="#" class="btn text-secondary text-uppercase font-weight-bold my-2px-3 py-2" data-toggle="tooltip" data-placement="bottom" title="This is an Imagination block">Learn more</a>
+                        </div>
+                    </div>
+                </div>   
+            </div>   
 		</div>
 
  		<!-- Footer -->
@@ -183,6 +197,10 @@
     <script type="text/javascript">
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
         });
     </script>
 </html>
